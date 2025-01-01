@@ -1,4 +1,9 @@
+import AcademicDepartment from "../pages/Admin/AcademicMangement/AcademicDepartment";
+import AcademicFaculty from "../pages/Admin/AcademicMangement/AcademicFaculty";
 import AcademicSemester from "../pages/Admin/AcademicMangement/AcademicSemester";
+import CreateAcademicDepartment from "../pages/Admin/AcademicMangement/CreateAcademicDepartment";
+import CreateAcademicFaculty from "../pages/Admin/AcademicMangement/CreateAcademicFaculty";
+import CreateAcademicSemester from "../pages/Admin/AcademicMangement/CreateAcademicSemester";
 import AdminDashboard from "../pages/Admin/AdminDashboard";
 import CreateAdmin from "../pages/Admin/CreateAdmin";
 import CreateFaculty from "../pages/Admin/CreateFaculty";
@@ -14,9 +19,34 @@ export const adminPaths = [
     name: "Academic Management",
     children: [
       {
+        name: "Create A. Semester",
+        path: "create-academic-semester",
+        element: <CreateAcademicSemester />,
+      },
+      {
         name: "Academic Semester",
         path: "academic-semester",
         element: <AcademicSemester />,
+      },
+      {
+        name: "Create A. Faculty",
+        path: "create-academic-faculty",
+        element: <CreateAcademicFaculty />,
+      },
+      {
+        name: "Academic Faculty",
+        path: "academic-faculty",
+        element: <AcademicFaculty />,
+      },
+      {
+        name: "Create A. Department",
+        path: "create-academic-department",
+        element: <CreateAcademicDepartment />,
+      },
+      {
+        name: "Academic Department",
+        path: "academic-department",
+        element: <AcademicDepartment />,
       },
     ],
   },
